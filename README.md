@@ -13,6 +13,15 @@ The purpose of this project is to reproduce a published work in bioinformatics. 
 > [!NOTE]  
 > To do: Describe file structure of repo
 
+
+### Dependencies
+> [!WARNING]  
+> We are using uv. DO NOT use `pip` directly or create a requirements.txt file. For example, instead of `pip install tqdm`, you should use `uv add tqdm`, or prepend all pip commands, e.g. `uv pip install tqdm`.
+
+This project uses `uv` for dependency management. [Read more about `uv` here.](https://docs.astral.sh/uv/guides/projects/#managing-dependencies) To set up your environment on first clone, run `uv sync`. Learn more about uv project structure [here](https://docs.astral.sh/uv/guides/projects/#project-structure).
+
+To activate the virtual environment after it is created, you can call `source .venv/bin/activate` on Mac/Linux or `.venv\Scripts\activate` on Windows. You might want to just add an alias to your bash config, like `vim .zshrc` > `alias activate="source .venv/bin/activate"` so you can just type `activate` to activate.
+
 ## Contributing
 
 > [!NOTE]  
