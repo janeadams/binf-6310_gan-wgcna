@@ -13,6 +13,8 @@ The purpose of this project is to reproduce a published work in bioinformatics. 
 > [!NOTE]  
 > To do: Describe file structure of repo
 
+> [!TIP]  
+> Each analysis notebook should have a data directory listed at the top; if we use these, then each analysis step will have its own folder, in order, in the data directory. Note that the data directory is in the .gitignore, which means that you will need to run each analysis step to generate the data for your local use.
 
 ### Dependencies
 > [!WARNING]  
