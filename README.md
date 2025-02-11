@@ -3,18 +3,19 @@ Group Members: Jane Adams, Madison Nguyen, Nicole Leon Vargas, Tzu-Tung (Bella) 
 
 ## Project Summary
 
-> [!NOTE]  
-> To do: Add paper and data source links
+The purpose of this project is to reproduce a published work in bioinformatics. we selected ["GAN-WGCNA: Calculating gene modules to identify key intermediate regulators in cocaine addiction"](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0311164#sec019). This study stood out for its innovative integration of Weighted Gene Co-expression Network Analysis (WGCNA) and Generative Adversarial Networks (GANs)—two well-established but distinct computational techniques. The combination of these methods offers a powerful approach to uncovering gene expression patterns linked to phenotypic traits, making it an exciting case study in applying machine learning to biological data. The study’s focus on cocaine addiction was particularly compelling, as it demonstrates how computational methods can enhance our understanding of complex disorders with genetic components. A key factor in our decision was the study’s transparency and accessibility. The authors provided both the dataset and analysis scripts, which are well-structured and documented. This ensures a clearer path for our reproducibility study and allows us to critically examine and validate their findings without unnecessary roadblocks related to missing or proprietary data.
 
-The purpose of this project is to reproduce a published work in bioinformatics. we selected "GAN-WGCNA: Calculating gene modules to identify key intermediate regulators in cocaine addiction." This study stood out for its innovative integration of Weighted Gene Co-expression Network Analysis (WGCNA) and Generative Adversarial Networks (GANs)—two well-established but distinct computational techniques. The combination of these methods offers a powerful approach to uncovering gene expression patterns linked to phenotypic traits, making it an exciting case study in applying machine learning to biological data. The study’s focus on cocaine addiction was particularly compelling, as it demonstrates how computational methods can enhance our understanding of complex disorders with genetic components. A key factor in our decision was the study’s transparency and accessibility. The authors provided both the dataset and analysis scripts, which are well-structured and documented. This ensures a clearer path for our reproducibility study and allows us to critically examine and validate their findings without unnecessary roadblocks related to missing or proprietary data.
+The original code for the project is on Github [here](https://github.com/baicalin/GAN-WGCNA).
 
 ## Project Structure
 
-> [!NOTE]  
-> To do: Describe file structure of repo
+Each analysis notebook should have a data directory listed at the top; if we use these, then each analysis step will have its own folder, in order, in the data directory. For example, `analysis/00_data-gathering` deposits all output files to `data/00_data-gathering`. 
 
 > [!TIP]  
-> Each analysis notebook should have a data directory listed at the top; if we use these, then each analysis step will have its own folder, in order, in the data directory. Note that the data directory is in the .gitignore, which means that you will need to run each analysis step to generate the data for your local use.
+>  Note that the data directory is in the .gitignore, which means that you will need to run each analysis step to generate the data for your local use. We do this so we don't need to use `git-lfs`, the large file system for git.
+
+> [!WARNING]  
+> Be careful not to commit any large files, because they are hard to retroactively remove from tracking. Most data file extensions should already be in the .gitignore, so this should be handled automatically.
 
 ### Dependencies
 > [!WARNING]  
@@ -26,5 +27,14 @@ To activate the virtual environment after it is created, you can call `source .v
 
 ## Contributing
 
-> [!NOTE]  
-> To do: Explain branching, PRs, etc.
+Use branching to make commits. For example, to create a new branch:
+
+`git checkout -b your_branch`
+
+To push your new branch:
+
+`git push -u origin your_branch`
+
+Create a pull request in the repository with an explanation of your changes, and then email the group.
+
+You may find it helpful to use [Github Desktop](https://github.com/apps/desktop) to review your changes and any merge conflicts.
