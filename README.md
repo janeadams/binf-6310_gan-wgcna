@@ -39,4 +39,4 @@ Create a pull request in the repository with an explanation of your changes, and
 
 You may find it helpful to use [Github Desktop](https://github.com/apps/desktop) to review your changes and any merge conflicts.
 
-Once your PR is merged, make sure to **delete your old branch** so it doesn't cause confusion.
+Once your PR is merged, make sure to **delete your old branch** so it doesn't cause confusion. Also, make sure to always `git pull` main before you branch, so you know you're working with the most up-to-date code.
