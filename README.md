@@ -38,3 +38,5 @@ To push your new branch:
 Create a pull request in the repository with an explanation of your changes, and then email the group.
 
 You may find it helpful to use [Github Desktop](https://github.com/apps/desktop) to review your changes and any merge conflicts.
+
+Once your PR is merged, make sure to **delete your old branch** so it doesn't cause confusion.
